@@ -1,0 +1,34 @@
+{
+    "plugins": ["tailwindcss"],
+    "extends": ["@antfu/vue", "plugin:tailwindcss/recommended"],
+    "overrides": [
+        {
+            "files": [
+                "./server/**/*.ts"
+            ],
+            "rules": {
+                "no-console": "off",
+                "no-undef": "error"
+            }
+        }
+    ],
+    "rules": {
+        "curly": [
+            "error",
+            "all"
+        ],
+        "brace-style": "off",
+        "@typescript-eslint/brace-style": [
+            "error",
+            "1tbs"
+        ],
+        "no-unused-vars": "error",
+        "tailwindcss/classnames-order": "error",
+        "tailwindcss/enforces-negative-arbitrary-values": "warn",
+        "tailwindcss/enforces-shorthand": "error",
+        "tailwindcss/migration-from-tailwind-2": "warn",
+        "tailwindcss/no-arbitrary-value": "off",
+        "tailwindcss/no-custom-classname": "off",
+        "tailwindcss/no-contradicting-classname": "error"
+    }
+}
